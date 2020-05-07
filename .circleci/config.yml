@@ -3,7 +3,24 @@ version: 2.1
 orbs:
   welcome: circleci/welcome-orb@0.4.1
 
+executors:
+  node:
+    docker: 
+      - image: circleci/node:latest
+
+jobs:
+  surge-install:
+    executor: 
+      name: node
+    steps: 
+      - checkout 
+      - run: npm install --global surge
+
+
 workflows:
   hello:
     jobs: 
       - welcome/run
+  main:
+    jobs:
+      - surge-install
