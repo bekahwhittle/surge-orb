@@ -14,7 +14,7 @@ jobs:
       name: node
     steps: 
       - checkout 
-      - run: npm install --global surge
+      - run: npm i surge
 
 
 workflows:
