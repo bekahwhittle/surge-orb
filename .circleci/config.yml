@@ -14,8 +14,8 @@ jobs:
       name: node
     steps: 
       - checkout 
-      - run: npm install --save-dev surge
-      - run: surge -V
+      - run: npm install surge
+      - run: ./node_modules/surge/lib/cli.js -V
 
 
 workflows:
