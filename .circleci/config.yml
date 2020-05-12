@@ -1,15 +1,12 @@
 version: 2.1 
 
-orbs:
-  welcome: circleci/welcome-orb@0.4.1
-
 executors:
   node:
     docker: 
       - image: circleci/node:latest
 
 jobs:
-  surge-install:
+  surge:
     executor: 
       name: node
     steps: 
@@ -19,9 +16,6 @@ jobs:
 
 
 workflows:
-  hello:
-    jobs: 
-      - welcome/run
-  main:
+  deploy:
     jobs:
-      - surge-install
+      - surge
