@@ -1,0 +1,20 @@
+{
+  "name": "surge-orb",
+  "version": "1.0.0",
+  "description": "🎉This orb will allow you to quickly deploy your code to surge!",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rebekahwhittle/surge-orb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rebekahwhittle/surge-orb/issues"
+  },
+  "homepage": "https://github.com/rebekahwhittle/surge-orb#readme"
+}

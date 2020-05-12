@@ -14,8 +14,8 @@ jobs:
       name: node
     steps: 
       - checkout 
-      - run: npm i surge
-      - run: surge -V
+      - run: npm install --save-dev surge
+      # - run: surge -V
 
 
 workflows:
